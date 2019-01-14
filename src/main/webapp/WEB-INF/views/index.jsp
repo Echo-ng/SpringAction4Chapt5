@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,9 @@
 <body>
     <h1>Welcome to Spittr</h1>
 
-    <a href="/spittles">Spittles</a>
-    <a href="/spitter/register">Register</a>
+    <a href="<c:url value="/spittles" />">Spittles</a> |
+    <a href="<c:url value="/spitter/register" />">Register</a>
 
-    <script src="/static/js/vue.min.js" />
+    <%--<script src="/static/js/vue.min.js" />--%>
 </body>
 </html>

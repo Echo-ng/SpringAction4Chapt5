@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Spittles</title>
+</head>
+<body>
+    <c:Foreach></c:Foreach>
+    <ul id="spittles">
+        <li v-for="spittle in spittleList">
+            <div>
+                {{ spittle.message }}
+            </div>
+            <div>
+                <span>{{spittle.time}}}</span>
+                <span>({{spittle.latitude}},{{spittle.longitude}})</span>
+            </div>
+        </li>
+    </ul>
+    <!--<script type="text/javascript" src="spittles.js"/>-->
+</body>
+</html>
